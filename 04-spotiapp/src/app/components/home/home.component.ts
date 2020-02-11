@@ -9,7 +9,7 @@ import { SpotifyService } from '../../services/spotify.service';
 })
 export class HomeComponent  {
 
-nuevasCanciones: any[]=[];
+nuevasCanciones: any[] = [];
 
   constructor(private spotify: SpotifyService) {
 

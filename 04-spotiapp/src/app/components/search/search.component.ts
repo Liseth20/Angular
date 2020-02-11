@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
 import { SpotifyService } from '../../services/spotify.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -14,7 +15,7 @@ artistas: any[] = [];
 
 buscar(termino:string){
 console.log(termino);
-this.spotify.getArtista(termino)
+this.spotify.getArtistas(termino)
 .subscribe((data:any) =>{
   this.artistas = data;
 });
